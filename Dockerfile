@@ -8,8 +8,8 @@ libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss
 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget bzip2 git && \
 apt-get clean && apt-get autoremove -y && rm -rf /var/lib/apt/lists/*
 
-RUN npm i -g puppeteer@1.0.0
+RUN yarn global add puppeteer@1.0.0
 
 ENV NODE_PATH="/usr/local/share/.config/yarn/global/node_modules:${NODE_PATH}"
 
-CMD ["puppeteer"]
+CMD ["node"]
