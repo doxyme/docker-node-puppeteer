@@ -3,11 +3,11 @@
 Image has all packages required to run Google puppeteer. Contains:
 
 * Node 8.9.4 (with Yarn preinstalled)
-* Preinstalled [Google Puppeteer](https://github.com/GoogleChrome/puppeteer)
+* Preinstalled [Google Puppeteer](https://github.com/GoogleChrome/puppeteer) 1.0.0
 
 ## Usage
 
-1. Pass `--no-sandbox, --disable-setuid-sandbox` args when launch browser
+1. Pass `--no-sandbox, --disable-setuid-sandbox` args when launch browser:
 
 ```js
 const puppeteer = require('puppeteer');
@@ -23,8 +23,7 @@ const puppeteer = require('puppeteer');
 })();
 ```
 
-2. Increase shm-size in case of `BUS_ADRERR` crash (https://bugs.chromium.org/p/chromium/issues/detail?id=571394)
-
+2. It's recommended to increase shm-size:
 ```bash
-docker run --shm-size 1G ...
+docker run --shm-size 1G doxyme/node8-puppeteer:latest
 ```
