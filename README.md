@@ -23,7 +23,7 @@ const puppeteer = require('puppeteer');
 })();
 ```
 
-2. Increase shm-size in case of `BUS_ADRERR` crash ([](https://bugs.chromium.org/p/chromium/issues/detail?id=571394))
+2. Increase shm-size in case of `BUS_ADRERR` crash (https://bugs.chromium.org/p/chromium/issues/detail?id=571394)
 
 ```bash
 docker run --shm-size 1G ...
