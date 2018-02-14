@@ -8,7 +8,7 @@ libxcursor1 libxdamage1 libxext6 libxfixes3 libxi6 libxrandr2 libxrender1 libxss
 ca-certificates fonts-liberation libappindicator1 libnss3 lsb-release xdg-utils wget bzip2 git && \
 apt-get clean && apt-get autoremove -y && rm -rf /var/lib/apt/lists/*
 
-RUN yarn global add gulp@3.9.1 codeceptjs-puppeteer@1.1.0 browser-sync@2.14 eslint babel-eslint faker connect-modrewrite
+RUN yarn global add gulp@3.9.1 puppeteer@1.0.0
 
 ENV NODE_PATH="/usr/local/share/.config/yarn/global/node_modules:${NODE_PATH}"
 
