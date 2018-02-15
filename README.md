@@ -5,7 +5,7 @@ https://hub.docker.com/r/doxyme/node8-puppeteer/
 Image has all linux packages required to run Google puppeteer. Contains:
 
 * Node 8.9.4 (with Yarn preinstalled)
-* Preinstalled Puppeteer 1.1.0
+* Preinstalled Puppeteer 1.0.0
 * Preinstalled Gulp 3.9.1
 
 ## Usage
