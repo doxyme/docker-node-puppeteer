@@ -1,8 +1,8 @@
-# Node 8 + Puppeteer docker image
+# Node 10 + Puppeteer docker image
 
-https://hub.docker.com/r/doxyme/node8-puppeteer/
+https://hub.docker.com/r/doxyme/node-puppeteer/
 
-Image has all linux packages required to run Google puppeteer. Includes Node 8 with Yarn preinstalled.
+Image has all linux packages required to run Google puppeteer. Includes Node 10 with Yarn preinstalled.
 
 ## Usage
 
@@ -24,5 +24,5 @@ const puppeteer = require('puppeteer');
 
 2. It's recommended to increase shm-size:
 ```bash
-docker run --shm-size 1G doxyme/node8-puppeteer:latest
+docker run --shm-size 1G doxyme/node-puppeteer:latest
 ```
